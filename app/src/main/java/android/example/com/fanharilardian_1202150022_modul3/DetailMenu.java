@@ -12,31 +12,31 @@ import android.widget.TextView;
 
 public class DetailMenu extends AppCompatActivity {
 
-    private TextView NAMAMAKANAN,HARGAMAKANAN,KOMPOSISIMAKANAN;
-    private ImageView GAMBARMAKANAN;
+    private TextView NamaAirMineral,HargaAirMineral,DeskripsiAirMineral;
+    private ImageView GambarAirMineral;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail_menu);
 
-        NAMAMAKANAN = (TextView) findViewById(R.id.TVMenuMakanan);
-        HARGAMAKANAN = (TextView) findViewById(R.id.TVHargaMakanan);
-        KOMPOSISIMAKANAN = (TextView) findViewById(R.id.daftarKomposisi);
-        GAMBARMAKANAN = (ImageView) findViewById(R.id.TVGambarMakanan);
+        NamaAirMineral = (TextView) findViewById(R.id.TVMenuMakanan);
+        HargaAirMineral = (TextView) findViewById(R.id.TVHargaMakanan);
+        DeskripsiAirMineral = (TextView) findViewById(R.id.deskripsiAirMineral);
+        GambarAirMineral = (ImageView) findViewById(R.id.TVGambarMakanan);
 
-        Intent ambilitem = getIntent();
+        Intent ambilintentdarimyadapter = getIntent();
 
-        String menu = ambilitem.getStringExtra("Nama Menu");
-        String hrga = ambilitem.getStringExtra("Harga");
-        String kmposisi= ambilitem.getStringExtra("Komposisi");
-        Integer gbr = ambilitem.getIntExtra("gambar",0);
+        String menu = ambilintentdarimyadapter.getStringExtra("Nama Air Mineral");
+        String hrga = ambilintentdarimyadapter.getStringExtra("Harga");
+        String kmposisi= ambilintentdarimyadapter.getStringExtra("DeskripsiAirMineral");
+        Integer gbr = ambilintentdarimyadapter.getIntExtra("gambar",0);
 
         //penetapan nilai untuk teks dan gambar
-        NAMAMAKANAN.setText(menu);
-        HARGAMAKANAN.setText(hrga);
-        KOMPOSISIMAKANAN.setText(kmposisi);
-        GAMBARMAKANAN.setImageResource(gbr);
+        NamaAirMineral.setText(menu);
+        HargaAirMineral.setText(hrga);
+        DeskripsiAirMineral.setText(kmposisi);
+        GambarAirMineral.setImageResource(gbr);
 
 
     }

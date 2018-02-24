@@ -20,17 +20,17 @@ public class MainMenu extends AppCompatActivity {
 
     //Daftar menu dari Napkeen
     private String[] DAFTARMENUNYA = {
-            "Ayam Geprek",
-            "Ayam Goreng",
-            "Gulai Ayam",
-            "Gulai Sapi",
-            "Lele Goreng",
-            "Nasgor Ayam",
-            "Nasgor Kambing",
-            "Pecel Lele",
-            "Sate Ayam",
-            "Sop Ayam",
-            "Telur Dadar"
+            "Ades",
+            "Amidis",
+            "Aqua",
+            "Cleo",
+            "Club",
+            "Equil",
+            "Evian",
+            "Le Minerale",
+            "Nestle",
+            "Pristine",
+            "Vit"
 
     };
     // harga makanannya
