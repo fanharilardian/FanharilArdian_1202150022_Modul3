@@ -39,6 +39,7 @@
                 android:layout_alignParentTop="true"
                 android:layout_marginStart="21dp"
                 android:layout_marginTop="17dp"
+                android:fontFamily="cursive"
                 android:text="Ades"
                 android:textSize="24sp"
                 android:textStyle="bold" />
@@ -50,6 +51,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignStart="@+id/namaAirMineral"
                 android:layout_below="@+id/namaAirMineral"
+                android:fontFamily="casual"
                 android:text="Hmmmm"
                 android:textSize="15sp"
                 tools:layout_width="wrap_content" />

@@ -20,10 +20,10 @@ public class DetailMenu extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail_menu);
 
-        NamaAirMineral = (TextView) findViewById(R.id.TVMenuMakanan);
+        NamaAirMineral = (TextView) findViewById(R.id.textViewNamaAirMineral);
         HargaAirMineral = (TextView) findViewById(R.id.TVHargaMakanan);
         DeskripsiAirMineral = (TextView) findViewById(R.id.deskripsiAirMineral);
-        GambarAirMineral = (ImageView) findViewById(R.id.TVGambarMakanan);
+        GambarAirMineral = (ImageView) findViewById(R.id.imageViewAirMineral);
 
         Intent ambilintentdarimyadapter = getIntent();
 
