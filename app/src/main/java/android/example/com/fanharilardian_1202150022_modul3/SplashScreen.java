@@ -26,8 +26,8 @@ public class SplashScreen extends Activity {
                 try{ sleep(3000); }
                 catch (InterruptedException e){ e.printStackTrace(); }
                 finally {
-                    // intent untuk pindah dari sini (splashscreen) ke kelas Home
-                    startActivity(new Intent(SplashScreen.this, Home.class));
+                    // intent untuk pindah dari sini (splashscreen) ke kelas Login
+                    startActivity(new Intent(SplashScreen.this, Login.class));
                     finish();
                 }
             }

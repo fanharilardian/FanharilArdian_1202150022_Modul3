@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/topbar"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="22dp"
+        android:src="@drawable/aqualogo" />
+
+    <EditText
+        android:id="@+id/fieldusername"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/fieldpassword"
+        android:layout_centerVertical="true"
+        android:fontFamily="casual"
+        android:hint="Username"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/fieldpassword"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fieldusername"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="casual"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/tombolLogin"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/fieldpassword"
+        android:layout_below="@+id/fieldpassword"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:fontFamily="casual"
+        android:onClick="login"
+        android:text="Login"
+        android:textAlignment="center"
+        android:textStyle="bold" />
+
+</RelativeLayout>

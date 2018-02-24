@@ -22,10 +22,6 @@
             android:label="Main Menu" />
 
         <activity
-            android:name=".MainMenu"
-            android:label="Main Menu" />
-
-        <activity
             android:name=".DetailMenu"
             android:label="Detail Menu"
             android:parentActivityName=".MainMenu">
