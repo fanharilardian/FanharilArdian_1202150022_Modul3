@@ -2,6 +2,7 @@ package android.example.com.fanharilardian_1202150022_modul3;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import java.util.ArrayList;
@@ -69,7 +70,7 @@ public class MainMenu extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
-
+        int gridColumnCount = getResources().getInteger(R.integer.grid_column_count);
         // membuat variabel ArrayList untuk menu, harga dan gambar makanannya
         isiMenu = new ArrayList<>();
         harganya = new ArrayList<>();
@@ -84,7 +85,9 @@ public class MainMenu extends AppCompatActivity {
         // membuat LinearLayoutManager secara vertikal pada kelas ini
         layoutManager = new LinearLayoutManager(this);
         // jalankan recyclerview dengan tampilan vertikal
-        RECYCLERVIEW.setLayoutManager(layoutManager);
+        RECYCLERVIEW.setLayoutManager(new GridLayoutManager(this,gridColumnCount));
+
+        //RECYCLERVIEW.setLayoutManager(layoutManager);
         // Mengisi adapter dengan menu, harga dan gambar makanan dari kelas MyAdapter
         ADAPTERNYA = new MyAdapter(isiMenu,harganya,gambarMakanannya);
         // jalankan recyclerview dengan adapter yang telah ditentukan diatas
