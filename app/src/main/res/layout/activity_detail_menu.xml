@@ -66,16 +66,49 @@
             tools:layout_editor_absoluteY="141dp" />
 
         <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
+            android:id="@+id/gallon"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
             android:layout_below="@+id/deskripsiAirMineral"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="21dp"
-            android:background="@color/cardview_dark_background"
-            app:srcCompat="@drawable/batere20" />
+            android:layout_gravity="center_horizontal"/>
+            
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/gallon"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal">
 
+            <ImageButton
+                android:id="@+id/button_minus"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:onClick="kosonginGalon"
+                android:src="@drawable/ic_remove"
+                android:tint="?attr/colorError" />
 
+            <TextView
+                android:id="@+id/Liter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:fontFamily="casual"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/button_plus"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:onClick="isiGalon"
+                android:src="@drawable/ic_plus"
+                android:tint="@android:color/holo_blue_bright" />
+            
+        </LinearLayout>
     </RelativeLayout>
 
 </ScrollView>
